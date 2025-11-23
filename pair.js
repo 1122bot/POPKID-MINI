@@ -360,7 +360,7 @@ const createSerial = (size) => {
 async function oneViewmeg(socket, isOwner, msg, sender) {
     if (!isOwner) {
         await socket.sendMessage(sender, {
-            text: '❌ *ᴏɴʟʏ ʙᴏᴛ ᴏᴡɴᴇʀ ᴄᴀɴ ᴠɪᴇᴡ ᴏɴᴄᴇ ᴍᴇssᴀɢᴇs!*'
+            text: '*YEH COMMAND SIRF MERE LIE HAI 😎*'
         });
         return;
     }
@@ -527,13 +527,13 @@ const replyglobal = async (m, teks) => {
             forwardingScore: 5,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterName: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ ",
+                newsletterName: "BILAL-MD",
                 newsletterJid: "120363289379419860@newsletter",
             },
             externalAdReply: {
-                title: " ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
-                body: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
-                thumbnailUrl: 'https://files.catbox.moe/wlysch.jpg',
+                title: "BILAL-MD",
+                body: "WHATSAPP BOT",
+                thumbnailUrl: 'https://files.catbox.moe/kunzpz.png',
                 sourceUrl: "https://shadow-jzxg6.ondigitalocean.app",
                 mediaType: 1,
                 renderLargerThumbnail: false,
@@ -554,7 +554,7 @@ const replyglobal = async (m, teks) => {
   },
   message: {
     contactMessage: {
-      displayName: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
+      displayName: "BILAL-MD",
       vcard: `BEGIN:VCARD
 VERSION:3.0
 N:Meta AI;;;;
@@ -584,20 +584,16 @@ END:VCARD`
         const seconds = Math.floor(uptime % 60);
 
         const captionText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ」*
-*│* ʙᴏᴛ ᴜᴘᴛɪᴍᴇ: ${hours}ʜ ${minutes}ᴍ ${seconds}s
-*│* ᴀᴄᴛɪᴠᴇ ʙᴏᴛs: ${activeSockets.size}
-*│* ʏᴏᴜʀ ɴᴜᴍʙᴇʀ: ${number}
-*│* ᴠᴇʀsɪᴏɴ: 1.0.0
-*│* ᴍᴇᴍᴏʀʏ ᴜsᴀɢᴇ: ${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)}ᴍʙ
-*╰────────•••───────┈⊷*
-
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ*
-> ʀᴇsᴘᴏɴᴅ ᴛɪᴍᴇ: ${Date.now() - msg.messageTimestamp * 1000}ms`;
+*👑 BILAL-MD WHATSAPP BOT 👑*
+*👑 UPTIME :❯ ${hours} ${minutes} ${seconds}*
+*👑 BOT USERS :❯  ${activeSockets.size}*
+*👑 USER :❯  ${number}*
+*👑 RAM  :❯  ${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)}*
+*👑 TIME :❯  ${Date.now() - msg.messageTimestamp * 1000}`;
 
         const aliveMessage = {
             image: { url: config.BUTTON_IMAGES.MENU },
-            caption: `> ᴀᴍ ᴀʟɪᴠᴇ ᴀɴᴅ ᴋɪᴄᴋɪɴɢ 🧜‍♂️\n\n${captionText}`,
+            caption: `ME ACTIVE HO 😊\n\n${captionText}*`,
             buttons: [
                 {
                     buttonId: `${config.PREFIX}menu_action`,
@@ -606,10 +602,10 @@ END:VCARD`
                     nativeFlowInfo: {
                         name: 'single_select',
                         paramsJson: JSON.stringify({
-                            title: 'ᴄʟɪᴄᴋ ʜᴇʀᴇ ❏',
+                            title: '*IDHAR OPTIONS PER CLICK KRO 😊',
                             sections: [
                                 {
-                                    title: `© ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ`,
+                                    title: `👑 BILAL-MD 👑`,
                                     highlight_label: 'Quick Actions',
                                     rows: [
                                         { title: '📋 ғᴜʟʟ ᴍᴇɴᴜ', description: 'ᴠɪᴇᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴍᴅs', id: `${config.PREFIX}menu` },
@@ -647,7 +643,7 @@ END:VCARD`
 // Case: bot_stats
 case 'bot_stats': {
     try {
-        await socket.sendMessage(m.chat, { react: { text: '📊', key: m.key } });
+        await socket.sendMessage(m.chat, { react: { text: '👑', key: m.key } });
 
         const from = m.key.remoteJid;
         const startTime = socketCreationTime.get(number) || Date.now();
@@ -660,17 +656,13 @@ case 'bot_stats': {
         const activeCount = activeSockets.size;
 
         const captionText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 」*
-*│* ʙᴏᴛ ɴᴀᴍᴇ: ᴘᴏᴘᴋɪᴅ  ᴍɪɴɪ ʙᴏᴛ
-*│* ᴜᴘᴛɪᴍᴇ: ${hours}ʜ ${minutes}ᴍ ${seconds}s
-*│* ᴍᴇᴍᴏʀʏ: ${usedMemory}ᴍʙ / ${totalMemory}ᴍʙ
-*│* ᴀᴄᴛɪᴠᴇ ᴜsᴇʀs: ${activeCount}
-*│* ʏᴏᴜʀ ɴᴜᴍʙᴇʀ: ${number}
-*│* ᴠᴇʀsɪᴏɴ: 1.0.0
-*╰───────•••───────┈⊷*
-*Ξ sᴇʟᴇᴄᴛ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ʙᴇʟᴏᴡ:*
+*👑 BILAL-MD WHATSAPP BOT 👑*
+*👑 UPTIME :❯  ${hours} ${minutes} ${seconds}*
+*👑 RAM :❯  ${usedMemory}ᴍʙ / ${totalMemory}ᴍʙ*
+*👑 BOT USERS :❯  ${activeCount}*
+*👑 USER :❯  ${number}
 
-> ᴛʏᴘᴇ *${config.PREFIX}ᴍᴇɴᴜ* ғᴏʀ ᴄᴏᴍᴍᴀɴᴅs`;
+*OPTION SELECT KARO ☺️♥️*`;
 
         const statsMessage = {
             image: { url: config.IMAGE_PATH },
@@ -678,37 +670,37 @@ case 'bot_stats': {
             buttons: [
                 {
                     buttonId: `${config.PREFIX}stats_menu`,
-                    buttonText: { displayText: '📂 ᴍᴇɴᴜ ᴏᴘᴛɪᴏɴ' },
+                    buttonText: { displayText: '👑 MENU 👑' },
                     type: 4,
                     nativeFlowInfo: {
                         name: 'single_select',
                         paramsJson: JSON.stringify({
-                            title: 'ᴄʟɪᴄᴋ ʜᴇʀᴇ ❏',
+                            title: 'IDHAR CLICK KARO 😊',
                             sections: [
                                 {
-                                    title: `© ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ`,
-                                    highlight_label: 'sʏsᴛᴇᴍ sᴛᴀᴛs',
+                                    title: `*BILAL-MD`,
+                                    highlight_label: 'SYSTEM',
                                     rows: [
-                                        { title: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ᴜʀʟ', description: 'ɢᴇᴛ ᴀ ɪᴍᴀɢᴇ ᴜʀʟ', id: `${config.PREFIX}tourl` },
-                                        { title: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ᴀɪ', description: 'ᴀɪ ᴄᴀᴛ', id: `${config.PREFIX}ai` },
-                                        { title: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ʀᴇᴘᴏ', description: 'ʙᴏᴛ ʀᴇᴘᴏsɪᴛᴏʀʏ', id: `${config.PREFIX}repo` }
+                                        { title: 'URL CONVERT', description: 'ɢᴇᴛ ᴀ ɪᴍᴀɢᴇ ᴜʀʟ', id: `${config.PREFIX}tourl` },
+                                        { title: 'AI', description: 'ᴀɪ ᴄᴀᴛ', id: `${config.PREFIX}ai` },
+                                        { title: 'REPO', description: 'ʙᴏᴛ ʀᴇᴘᴏsɪᴛᴏʀʏ', id: `${config.PREFIX}repo` }
                                     ]
                                 },
                                 {
                                     title: "ϙᴜɪᴄᴋ ᴄᴍᴅs",
                                     highlight_label: 'ᴘᴏᴘᴜʟᴀʀ',
                                     rows: [
-                                        { title: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ғᴜʟʟ ᴍᴇɴᴜ', description: 'ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ʟɪꜱᴛ', id: `${config.PREFIX}menu` },
-                                        { title: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ᴘɪɴɢ  ᴛᴇsᴛ', description: 'ᴄʜᴇᴄᴋ ʀᴇsᴘᴏɴsᴇ sᴘᴇᴇᴅ', id: `${config.PREFIX}ping` },
-                                        { title: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ᴏᴡɴᴇʀ', description: 'ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ', id: `${config.PREFIX}owner` }
+                                        { title: 'MENU', description: 'ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ʟɪꜱᴛ', id: `${config.PREFIX}menu` },
+                                        { title: 'PING', description: 'ᴄʜᴇᴄᴋ ʀᴇsᴘᴏɴsᴇ sᴘᴇᴇᴅ', id: `${config.PREFIX}ping` },
+                                        { title: 'USER', description: 'ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ', id: `${config.PREFIX}owner` }
                                     ]
                                 }
                             ]
                         })
                     }
                 },
-                { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ᴀʟɪᴠᴇ' }, type: 1 },
-                { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: '© ᴘᴏᴘᴋɪᴅ ʙᴏᴛ ᴍᴇɴᴜ' }, type: 1 }
+                { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: '*I AM ACTIVE ☺️💞*' }, type: 1 },
+                { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: '*👑 MENU 👑*' }, type: 1 }
             ],
             headerType: 1,
             viewOnce: true
@@ -719,7 +711,7 @@ case 'bot_stats': {
     } catch (error) {
         console.error('Bot stats error:', error);
         await socket.sendMessage(m.chat, { 
-            text: '❌ Failed to retrieve stats. Please try again later.' 
+            text: '*DUBARA KOSHISH KARO ☺️❣️*' 
         }, { quoted: m });
     }
     break;
@@ -730,17 +722,15 @@ case 'bot_info': {
     try {
         const from = m.key.remoteJid;
         const captionText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 」*
-*│*  ʙᴏᴛ ɴᴀᴍᴇ: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
-*│*  ᴜsᴇʀ: @${m.sender.split('@')[0]}
-*│*  ᴄʀᴇᴀᴛᴏʀ: ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ
-*│*  ᴠᴇʀsɪᴏɴ: ${config.version}
-*│*  ᴘʀᴇғɪx: ${config.PREFIX}
-*│*  ᴅᴇsᴄ: ʏᴏᴜʀ sᴘɪᴄʏ ᴡʜᴀᴛsᴀᴘᴘ ᴄᴏᴍᴘᴀɴɪᴏɴ 
-*╰───────••••──────⊷*`;
+*👑 BILAL-MD WHATSAPP BOT 👑*
+
+*👑 USER :❯  @${m.sender.split('@')[0]}*
+*👑 DEVELPER :❯ BILAL*
+*👑 VERSION :❯ ${config.version}*
+*👑 PREFIX :❯  ${config.PREFIX}*`;
 
         const botInfoMessage = {
-            image: { url: "https://files.catbox.moe/ym2qui.jpg" },
+            image: { url: "https://files.catbox.moe/kunzpz.png" },
             caption: captionText,
             buttons: [
                 {
