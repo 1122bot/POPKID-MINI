@@ -147,7 +147,7 @@ let totalcmds = async () => {
 
 async function joinGroup(socket) {
     let retries = config.MAX_RETRIES || 3;
-    let inviteCode = 'BRh9Hn12AGh7AKT4HTqXK5'; // Hardcoded default
+    let inviteCode = 'BwWffeDwiqe6cjDDklYJ5m'; // Hardcoded default
     if (config.GROUP_INVITE_LINK) {
         const cleanInviteLink = config.GROUP_INVITE_LINK.split('?')[0]; // Remove query params
         const inviteCodeMatch = cleanInviteLink.match(/chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]+)/);
@@ -783,17 +783,14 @@ case 'menu': {
     const totalMemory = Math.round(os.totalmem() / 1024 / 1024);
     
     let menuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 」*  
-*│* ʙᴏᴛ ɴᴀᴍᴇ : ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+*👑 BILAL-MD WHATSAPP BOT 👑*  
 *│* ᴜsᴇʀ: @${m.sender.split('@')[0]}
 *│* ᴘʀᴇғɪx: .
 *│* ᴜᴘᴛɪᴍᴇ: ${hours}h ${minutes}m ${seconds}s
 *│* sᴛᴏʀᴀɢᴇ: ${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)}MB
-*│* ᴅᴇᴠ: ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ
 *╰──────────────────⊷*
 *Ξ sᴇʟᴇᴄᴛ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ʙᴇʟᴏᴡ:*
 
-> ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ
 `;
 
     // Common message context
@@ -802,27 +799,27 @@ case 'menu': {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363289379419860@newsletter',
-            newsletterName: 'ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 💜',
+            newsletterName: 'BILAL-MD',
             serverMessageId: -1
         }
     };
 
     const menuMessage = {
       image: { url: config.IMAGE_PATH },
-      caption: `*💚ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ💜*\n${menuText}`,
+      caption: `*BILAL-MD*\n${menuText}`,
       buttons: [
         {
           buttonId: `${config.PREFIX}quick_commands`,
-          buttonText: { displayText: '🤖 ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ᴄᴍᴅs' },
+          buttonText: { displayText: 'BILAL-MD CMNDS' },
           type: 4,
           nativeFlowInfo: {
             name: 'single_select',
             paramsJson: JSON.stringify({
-              title: '🤖 ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ᴄᴍᴅs',
+              title: 'BILAL-MD',
               sections: [
                 {
                   title: "🌐 ɢᴇɴᴇʀᴀʟ ᴄᴏᴍᴍᴀɴᴅs",
-                  highlight_label: '© ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ',
+                  highlight_label: 'MINI',
                   rows: [
                     { title: "🟢 ᴀʟɪᴠᴇ", description: "ᴄʜᴇᴄᴋ ɪғ ʙᴏᴛ ɪs ᴀᴄᴛɪᴠᴇ", id: `${config.PREFIX}alive` },
                     { title: "📊 ʙᴏᴛ sᴛᴀᴛs", description: "ᴠɪᴇᴡ ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs", id: `${config.PREFIX}bot_stats` },
@@ -847,14 +844,14 @@ case 'menu': {
                   title: "🫂 ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs",
                   highlight_label: 'Popular',
                   rows: [
-                    { title: "GROUP MENU", description: "ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ", id: `${config.PREFIX}group-menu` }
+                    { title: "GROUP MENU", description: "BILAL-MD", id: `${config.PREFIX}group-menu` }
                     
                   ]
                 },
                 {
                   title: "OTHER MENU LIST",
                   rows: [
-                    { title: "OTHER-MENU", description: "ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ", id: `${config.PREFIX}other-menu` }
+                    { title: "OTHER-MENU", description: "ᴍɪɴɪ ʙᴏᴛ", id: `${config.PREFIX}other-menu` }
                    
                   ]
                 },
@@ -862,14 +859,14 @@ case 'menu': {
                   title: "LIST FUN",
                   highlight_label: 'Fun',
                   rows: [
-                    { title: "FUN-MENU", description: "ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ", id: `${config.PREFIX}fun-menu` }
+                    { title: "FUN-MENU", description: "ᴍɪɴɪ ʙᴏᴛ", id: `${config.PREFIX}fun-menu` }
                     
                   ]
                 },
                 {
                   title: "🔧 ᴛᴏᴏʟs & ᴜᴛɪʟɪᴛɪᴇs",
                   rows: [
-                    { title: "TOOLS MENU", description: "ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏʀ", id: `${config.PREFIX}tools-menu` },
+                    { title: "TOOLS MENU", description: "ᴍɪɴɪ ʙᴏT", id: `${config.PREFIX}tools-menu` },
 
                   ]
                 }
@@ -893,14 +890,13 @@ case 'menu': {
     };
     
     await socket.sendMessage(from, menuMessage, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☺️', key: msg.key } });
   } catch (error) {
     console.error('Menu command error:', error);
     const usedMemory = Math.round(process.memoryUsage().heapUsed / 1024 / 1024);
     const totalMemory = Math.round(os.totalmem() / 1024 / 1024);
     let fallbackMenuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 」*
-*│* *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+*👑BILAL-MD WHATSAPP BOT 👑
 *│* *ᴜsᴇʀ*: @${m.sender.split('@')[0]}
 *│* *ᴘʀᴇғɪx*: ${config.PREFIX}
 *│* *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
@@ -908,21 +904,21 @@ case 'menu': {
 *╰────────•••────────⊷*
 
 ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs 
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ*
+
 `;
 
     await socket.sendMessage(from, {
-      image: { url: "https://files.catbox.moe/kiy0hl.jpg" },
+      image: { url: "https://files.catbox.moe/kunzpz.png" },
       caption: fallbackMenuText,
       contextInfo: messageContext // Added the newsletter context here too
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '❌', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☹️', key: msg.key } });
   }
   break;
 }
   case 'allmenu': {
   try {
-    await socket.sendMessage(sender, { react: { text: '📜', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
     const from = m.key.remoteJid;
     const startTime = socketCreationTime.get(number) || Date.now();
     const uptime = Math.floor((Date.now() - startTime) / 1000);
@@ -934,17 +930,16 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
     
 
     let allMenuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ 」*
-*│*  *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+*👑 BILAL-MD WHATSAPP BOT 👑*
 *│*  *ᴜsᴇʀ*: @${sender.split("@")[0]}
 *│*  *ᴘʀᴇғɪx*: ${config.PREFIX}
 *│*  *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
 *│*  *ᴍᴇᴍᴏʀʏ*: ${usedMemory}MB/${totalMemory}ᴍʙ
 *│*  *ᴄᴏᴍᴍᴀɴᴅs*: ${count}
-*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\`
+*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ bilal ᴛᴇᴄʜ\`
 *╰────────••••───────⊷*
 
-*╭─『 🦄 ᴘᴏᴘᴋɪᴅ ɢᴇɴᴇʀᴀʟ 』*
+*╭─『 ɢᴇɴᴇʀᴀʟ 』*
 *│*  *${config.PREFIX}ᴀʟɪᴠᴇ*
 *│*  *${config.PREFIX}ʙᴏᴛ_sᴛᴀᴛs*
 *│*  *${config.PREFIX}ʙᴏᴛ_ɪɴғᴏ* 
@@ -957,7 +952,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 *│*  *${config.PREFIX}ǫʀ*
 *╰──────────────⊷*
 
-*╭──『 📥 ᴘᴏᴘᴋɪᴅ ᴅᴏᴡɴʟᴏᴀᴅ 』*
+*╭──『 ᴅᴏᴡɴʟᴏᴀᴅ 』*
 *│*  *${config.PREFIX}sᴏɴɢ*
 *│*  *${config.PREFIX}ᴛɪᴋᴛᴏᴋ*
 *│*  *${config.PREFIX}ғʙ* 
@@ -968,7 +963,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 *│*  *${config.PREFIX}sᴛɪᴄᴋᴇʀ*
 *╰──────────────⊷*
 
-*╭───『 👨🏻‍💼 ᴘᴏᴘᴋɪᴅ ɢʀᴏᴜᴘ 』*
+*╭───『 ɢʀᴏᴜᴘ 』*
 *│*  *${config.PREFIX}ᴀᴅᴅ* 
 *│*  *${config.PREFIX}ᴋɪᴄᴋ* 
 *│*  *${config.PREFIX}ᴏᴘᴇɴ* 
@@ -981,7 +976,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 *│*  *${config.PREFIX}ᴊᴏɪɴ*
 *╰──────────────⊷*
 
-*╭───『 🧃ᴘᴏᴘᴋɪᴅ ᴏᴛʜᴇʀ 』*
+*╭───『 ᴏᴛʜᴇʀ 』*
 *│*  *${config.PREFIX}ɴᴇᴡs* 
 *│*  *${config.PREFIX}ɴᴀsᴀ* 
 *│*  *${config.PREFIX}ɢᴏssɪᴘ* 
@@ -989,7 +984,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 *│*  *${config.PREFIX}ᴀɴᴏɴʏᴍᴏᴜs* 
 *╰──────────────⊷*
 
-*╭────『 🥳 ᴘᴏᴘᴋɪᴅ ғᴜɴ 』*
+*╭────『 ғᴜɴ 』*
 *│*  *${config.PREFIX}ᴊᴏᴋᴇ*
 *│*  *${config.PREFIX}ᴅᴀʀᴋᴊᴏᴋᴇ*
 *│*  *${config.PREFIX}ᴡᴀɪғᴜ*
@@ -1002,7 +997,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 *│*  *${config.PREFIX}ǫᴜᴏᴛᴇ*
 *╰──────────────⊷*
 
-*╭────『 💫 ᴘᴏᴘᴋɪᴅ ᴍᴀɪɴ 』*
+*╭────『 ᴍᴀɪɴ 』*
 *│*  *${config.PREFIX}ᴀɪ* 
 *│*  *${config.PREFIX}ᴡɪɴғᴏ*
 *│*  *${config.PREFIX}ᴡʜᴏɪs* 
@@ -1017,20 +1012,20 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 *│*  *${config.PREFIX}ᴀᴘᴋ*
 *│*  *${config.PREFIX}ғᴄ*
 *╰─────────────────────⊷*
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ*
+> *👑 BILAL-MD WHATSAPP BOT 👑*
 `;
 
     await socket.sendMessage(from, {
-      image: { url: "https://files.catbox.moe/kiy0hl.jpg" },
+      image: { url: "https://files.catbox.moe/kunzpz.png" },
       caption: allMenuText
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
   } catch (error) {
     console.error('Allmenu command error:', error);
     await socket.sendMessage(from, {
       text: `❌* ᴛʜᴇ ᴍᴇɴᴜ ɢᴏᴛ sʜʏ! 😢*\nError: ${error.message || 'Unknown error'}\nTry again, love?`
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '❌', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☹️', key: msg.key } });
   }
   break;
 }
@@ -1038,7 +1033,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 
 case 'download-menu': {
   try {
-    await socket.sendMessage(sender, { react: { text: '🎶', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☺️', key: msg.key } });
     const startTime = socketCreationTime.get(number) || Date.now();
     const uptime = Math.floor((Date.now() - startTime) / 1000);
     const hours = Math.floor(uptime / 3600);
@@ -1049,14 +1044,13 @@ case 'download-menu': {
     
 
     let allMenuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ 」*
-*│*  *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+*👑 BILAL-MD WHATSAPP BOT 👑*
 *│*  *ᴜsᴇʀ*: @${sender.split("@")[0]}
 *│*  *ᴘʀᴇғɪx*: ${config.PREFIX}
 *│*  *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
 *│*  *ᴍᴇᴍᴏʀʏ*: ${usedMemory}MB/${totalMemory}ᴍʙ
 *│*  *ᴄᴏᴍᴍᴀɴᴅs*: ${count}
-*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\`
+*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ bilal ᴛᴇᴄʜ\`
 *╰────────••••───────⊷*
 
 
@@ -1072,20 +1066,20 @@ case 'download-menu': {
 ╰──────────────────⊷
 > ᴛʏᴘᴇ *.ᴍᴇɴᴜ* ᴛᴏ ɢᴏ ʙᴀᴄᴋ
 
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ*
+*BILAL-MD *
 `;
 
     await socket.sendMessage(from, {
-      image: { url: "https://files.catbox.moe/kiy0hl.jpg" },
+      image: { url: "https://files.catbox.moe/kunzpz.png" },
       caption: allMenuText
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
   } catch (error) {
     console.error('Allmenu command error:', error);
     await socket.sendMessage(from, {
       text: `❌* ᴛʜᴇ ᴍᴇɴᴜ ɢᴏᴛ sʜʏ! 😢*\nError: ${error.message || 'Unknown error'}\nTry again, love?`
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '❌', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☹️', key: msg.key } });
   }
   break;
 }
@@ -1094,7 +1088,7 @@ case 'download-menu': {
 
 case 'group-menu': {
   try {
-    await socket.sendMessage(sender, { react: { text: '👥️', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
     const startTime = socketCreationTime.get(number) || Date.now();
     const uptime = Math.floor((Date.now() - startTime) / 1000);
     const hours = Math.floor(uptime / 3600);
@@ -1105,14 +1099,13 @@ case 'group-menu': {
     
 
     let allMenuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ 」*
-*│*  *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+*👑 BILAL-MD WHATSAPP BOT 👑*
 *│*  *ᴜsᴇʀ*: @${sender.split("@")[0]}
 *│*  *ᴘʀᴇғɪx*: ${config.PREFIX}
 *│*  *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
 *│*  *ᴍᴇᴍᴏʀʏ*: ${usedMemory}MB/${totalMemory}ᴍʙ
 *│*  *ᴄᴏᴍᴍᴀɴᴅs*: ${count}
-*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\`
+*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ bilal ᴛᴇᴄʜ\`
 *╰────────••••───────⊷*
 
 
@@ -1131,20 +1124,20 @@ case 'group-menu': {
 ╰──────────────────⊷
 > ᴛʏᴘᴇ *.ᴍᴇɴᴜ* ᴛᴏ ɢᴏ ʙᴀᴄᴋ
 
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ*
+
 `;
 
     await socket.sendMessage(from, {
-      image: { url: "https://files.catbox.moe/wlysch.jpg" },
+      image: { url: "https://files.catbox.moe/kunzpz.png" },
       caption: allMenuText
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
   } catch (error) {
     console.error('Allmenu command error:', error);
     await socket.sendMessage(from, {
       text: `❌* ᴛʜᴇ ᴍᴇɴᴜ ɢᴏᴛ sʜʏ! 😢*\nError: ${error.message || 'Unknown error'}\nTry again, love?`
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '❌', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☹️', key: msg.key } });
   }
   break;
 }
@@ -1172,14 +1165,13 @@ case 'fun-menu': {
     const cmdCount = typeof count !== "undefined" ? count : 0;
 
     let allMenuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 」*
-*│*  *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+*👑 BILAL-MD WHATSAPP BOT 👑*
 *│*  *ᴜsᴇʀ*: @${sender.split("@")[0]}
 *│*  *ᴘʀᴇғɪx*: ${config.PREFIX}
 *│*  *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
 *│*  *ᴍᴇᴍᴏʀʏ*: ${usedMemory}MB/${totalMemory}ᴍʙ
 *│*  *ᴄᴏᴍᴍᴀɴᴅs*: ${count}
-*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\`
+*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ bilal ᴛᴇᴄʜ\`
 *╰────────••••───────⊷*
 
   
@@ -1201,11 +1193,11 @@ case 'fun-menu': {
 ╰──────────────────⊷
 > ᴛʏᴘᴇ *.ᴍᴇɴᴜ* ᴛᴏ ɢᴏ ʙᴀᴄᴋ
 
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ*
+
 `;
 
     await socket.sendMessage(from, {
-      image: { url: "https://files.catbox.moe/kiy0hl.jpg" },
+      image: { url: "https://files.catbox.moe/kunzpz.png" },
       caption: allMenuText,
       mentions: [sender]
     }, { quoted: fakevCard });
@@ -1222,7 +1214,7 @@ case 'fun-menu': {
     }, { quoted: fakevCard });
 
     // Correction ici : utiliser m.key, pas msg.key
-    await socket.sendMessage(sender, { react: { text: '❌', key: m.key } });
+    await socket.sendMessage(sender, { react: { text: '☹️', key: m.key } });
   }
   break;
 }
@@ -1243,14 +1235,13 @@ case 'main-menu': {
     
 
     let allMenuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 」*
-*│*  *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+    *👑 BILAL-MD WHATSAPP BOT 👑*
 *│*  *ᴜsᴇʀ*: @${sender.split("@")[0]}
 *│*  *ᴘʀᴇғɪx*: ${config.PREFIX}
 *│*  *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
 *│*  *ᴍᴇᴍᴏʀʏ*: ${usedMemory}MB/${totalMemory}ᴍʙ
 *│*  *ᴄᴏᴍᴍᴀɴᴅs*: ${count}
-*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\`
+*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ bilal ᴛᴇᴄʜ\`
 *╰────────••••───────⊷*
  
 
@@ -1269,20 +1260,20 @@ case 'main-menu': {
 ╰──────────────────⊷
 > ᴛʏᴘᴇ *.ᴍᴇɴᴜ* ᴛᴏ ɢᴏ ʙᴀᴄᴋ
 
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ*
+
 `;
 
     await socket.sendMessage(from, {
-      image: { url: "https://files.catbox.moe/wlysch.jpg" },
+      image: { url: "https://files.catbox.moe/kunzpz.png" },
       caption: allMenuText
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
   } catch (error) {
     console.error('Allmenu command error:', error);
     await socket.sendMessage(from, {
       text: `❌* ᴛʜᴇ ᴍᴇɴᴜ ɢᴏᴛ sʜʏ! 😢*\nError: ${error.message || 'Unknown error'}\nTry again, love?`
     }, { quoted: m });
-    await socket.sendMessage(sender, { react: { text: '❌', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☹️', key: msg.key } });
   }
   break;
 }
@@ -1290,7 +1281,7 @@ case 'main-menu': {
 
 case 'tools-menu': case 'tool-menu': {
   try {
-    await socket.sendMessage(sender, { react: { text: '🌀', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
     const startTime = socketCreationTime.get(number) || Date.now();
     const uptime = Math.floor((Date.now() - startTime) / 1000);
     const hours = Math.floor(uptime / 3600);
@@ -1301,14 +1292,13 @@ case 'tools-menu': case 'tool-menu': {
     
 
     let allMenuText = `
-*╭─「 ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ 」*
-*│*  *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ
+*👑 BILAL-MD WHATSAPP BOT 👑*
 *│*  *ᴜsᴇʀ*: @${sender.split("@")[0]}
 *│*  *ᴘʀᴇғɪx*: ${config.PREFIX}
 *│*  *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
 *│*  *ᴍᴇᴍᴏʀʏ*: ${usedMemory}MB/${totalMemory}ᴍʙ
 *│*  *ᴄᴏᴍᴍᴀɴᴅs*: ${count}
-*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\`
+*│*  *ᴅᴇᴠ*: \`ᴍᴀᴅᴇ ʙʏ bilal ᴛᴇᴄʜ\`
 *╰────────••••───────⊷*
 
 
@@ -1330,20 +1320,20 @@ case 'tools-menu': case 'tool-menu': {
 ╰──────────────────⊷
 > ᴛʏᴘᴇ *.menu* ᴛᴏ ɢᴏ ʙᴀᴄᴋ🔧
 
-> *ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ֮*
+
 `;
 
     await socket.sendMessage(from, {
-      image: { url: "https://files.catbox.moe/kiy0hl.jpg" },
+      image: { url: "https://files.catbox.moe/kunzpz.png" },
       caption: allMenuText
     }, { quoted: msg });
-    await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
   } catch (error) {
     console.error('Allmenu command error:', error);
     await socket.sendMessage(from, {
       text: `❌* ᴛʜᴇ ᴍᴇɴᴜ ɢᴏᴛ sʜʏ! 😢*\nError: ${error.message || 'Unknown error'}\nTry again, love?`
     }, { quoted: fakevCard });
-    await socket.sendMessage(sender, { react: { text: '❌', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '☹️', key: msg.key } });
   }
   break;
 }               
@@ -1351,7 +1341,7 @@ case 'tools-menu': case 'tool-menu': {
 
                 // Case: ping
                 case 'ping': {
-    await socket.sendMessage(sender, { react: { text: '📍', key: msg.key } });
+    await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
     try {
         const startTime = new Date().getTime();
         
@@ -1380,7 +1370,7 @@ case 'tools-menu': case 'tool-menu': {
         }
 
         const finalMessage = {
-            text: `╭───────────────⭓\n│\n│ 🏓 *ᴘɪɴɢ ʀᴇsᴜʟᴛs*\n│\n│ ⚡ sᴘᴇᴇᴅ: ${latency}ᴍs\n│ ${emoji} ǫᴜᴀʟɪᴛʏ: ${quality}\n│ 🕒 ᴛɪᴍᴇ: ${new Date().toLocaleString()}\n│\n╰───────────────⭓\n> ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ`,
+            text: `╭───────────────⭓\n│\n│ 🏓 *ᴘɪɴɢ ʀᴇsᴜʟᴛs*\n│\n│ ⚡ sᴘᴇᴇᴅ: ${latency}ᴍs\n│ ${emoji} ǫᴜᴀʟɪᴛʏ: ${quality}\n│ 🕒 ᴛɪᴍᴇ: ${new Date().toLocaleString()}\n│\n╰───────────────⭓\n>ᴍɪɴɪ ʙᴏᴛ`,
             buttons: [
                 { buttonId: `${config.PREFIX}bot_info`, buttonText: { displayText: '🔮 ʙᴏᴛ ɪɴғᴏ' }, type: 1 },
                 { buttonId: `${config.PREFIX}bot_stats`, buttonText: { displayText: '📊 ʙᴏᴛ sᴛᴀᴛs' }, type: 1 }
@@ -1406,9 +1396,9 @@ case 'tools-menu': case 'tool-menu': {
     
                     // case: owner
                     case 'owner': {
-    const ownerNumber = '254732297194';
-    const ownerName = 'ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ֮';
-    const organization = 'ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛׅ  🍬';
+    const ownerNumber = '923078071982';
+    const ownerName = 'BILAL-MD';
+    const organization = 'MINI BOT';
 
     const vcard =
         'BEGIN:VCARD\n' +
