@@ -45,20 +45,20 @@ const config = {
     AUTO_VIEW_STATUS: 'true',
     AUTO_LIKE_STATUS: 'true',
     AUTO_RECORDING: 'true',
-    AUTO_LIKE_EMOJI: ['💋', '😶', '✨️', '💗', '🎈', '🎉', '🥳', '❤️', '🧫', '🐭'],
+    AUTO_LIKE_EMOJI: ['🥰', '💌', '💕', '💗', '🌹', '😇', '☺️', '😊', '😍', '❣️'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    IMAGE_PATH: 'https://files.catbox.moe/kiy0hl.jpg',
+    IMAGE_PATH: 'https://files.catbox.moe/kunzpz.png',
     GROUP_INVITE_LINK: '',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: 'https://files.catbox.moe/kiy0hl.jpg',
+    RCD_IMAGE_PATH: 'https://files.catbox.moe/kunzpz.png',
     NEWSLETTER_JID: '120363289379419860@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     version: '1.0.0',
-    OWNER_NUMBER: '584168015069',
-    BOT_FOOTER: 'ᴘᴏᴘᴋɪᴅ xᴍᴅ',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VacgxK96hENmSRMRxx1r'
+    OWNER_NUMBER: '923078071982',
+    BOT_FOOTER: '👑 BILAL-MD 👑',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G'
 };
 
 
