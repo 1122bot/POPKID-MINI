@@ -15,7 +15,7 @@
     "node-fetch": "^2.7.0",
     "dotenv": "^16.4.5",
     "pino": "^9.5.0",
-    "jimp": "^1.6.0",
+    "jimp": "^0.22.12",
     "@octokit/rest": "^21.0.2",
     "denethdev-ytmp3": "^1.0.3",
     "yt-search": "^2.12.1",
