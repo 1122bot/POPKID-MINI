@@ -3406,7 +3406,7 @@ case 'linkgc': {
                 text: formatMessage(
                     '💭 sᴘɪᴄʏ ǫᴜᴏᴛᴇ',
                     `📜 "${data.content}"\n— ${data.author}`,
-                    'ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ'
+                    'bilal ᴍɪɴɪ ʙᴏᴛ'
                 )
             }, { quoted: fakevCard });
         } catch (error) {
@@ -3460,7 +3460,7 @@ case 'apk': {
             caption: formatMessage(
                 '📦 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀᴘᴋ',
                 `ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ${name}... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ.`,
-                '> ᴘᴏᴘᴋɪᴅ  ᴍɪɴɪ ʙᴏᴛ ᴡᴇʙ'
+                '> ᴍɪɴɪ ʙᴏᴛ ᴡᴇʙ'
             )
         }, { quoted: fakevCard });
 
@@ -3489,7 +3489,7 @@ case 'apk': {
             caption: formatMessage(
                 '📦 ᴀᴘᴋ ᴅᴇᴛᴀɪʟs',
                 `🔖 ɴᴀᴍᴇ: ${name || 'N/A'}\n📅 ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇ: ${lastup || 'N/A'}\n📦 ᴘᴀᴄᴋᴀɢᴇ: ${package || 'N/A'}\n📏 Size: ${size || 'N/A'}`,
-                '> ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ ᴡᴇʙ'
+                '> ᴍɪɴɪ ʙᴏᴛ ᴡᴇʙ'
             )
         }, { quoted: fakevCard });
 
@@ -3541,14 +3541,14 @@ case 'shorturl': {
       text: `✅ *sʜᴏʀᴛ ᴜʀʟ ᴄʀᴇᴀᴛᴇᴅ!* 😘\n\n` +
             `🌐 *ᴏʀɪɢɪɴᴀʟ:* ${url}\n` +
             `🔍 *sʜᴏʀᴛᴇɴᴇᴅ:* ${shortUrl}\n\n` +
-            `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ`
+            `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ`
     }, { 
       quoted: msg,
       forwardingScore: 1,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: '120363289379419860@newsletter',
-        newsletterName: 'ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢׁׅ֬ ᴍɪׁׁׁׅׅׅ݊ɴɪׁׁׁׅׅׅ ʙᴏׅׅᴛׁׅ 👑',
+        newsletterName: 'BILAL MD WHATSAPP BOT',
         serverMessageId: -1
       }
     });
@@ -3654,7 +3654,7 @@ case 'savestatus': case 'sendme': case 'save': {
     await socket.sendMessage(sender, {
       text: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ, ʙᴀʙᴇ!* 😘\n` +
             `📁 *ғɪʟᴇ:* status_${Date.now()}.${fileExt}\n` +
-            `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ`,
+            `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ`,
       document: { url: filePath },
       mimetype: msg.quoted.imageMessage ? 'image/jpeg' : 'video/mp4',
       fileName: `status_${Date.now()}.${fileExt}`
@@ -3816,7 +3816,7 @@ case 'tourl': case 'url': case 'tourl2': {
             text: `✅ *${mediaType} ᴜᴘʟᴏᴀᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ*\n\n` +
                   `📦 *Size:* ${formatBytes(mediaBuffer.length)}\n` +
                   `🌍 *URL:* ${mediaUrl}\n\n` +
-                  `> © ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ `
+                  `> © ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ bilal ᴛᴇᴄʜ `
         }, { quoted: fakevCard });
 
     } catch (error) {
