@@ -1421,7 +1421,7 @@ case 'tools-menu': case 'tool-menu': {
         await socket.sendMessage(
             from,
             {
-                text: `*ᴘᴏᴘᴋɪᴅ ᴏᴡɴᴇʀs*\n\n💚 ɴᴀᴍᴇ: ${ownerName}\n💜 ɴᴜᴍʙᴇʀ: ${ownerNumber}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ*`,
+                text: `*👑 DEVELEPERS 👑*\n\n💚 ɴᴀᴍᴇ: ${ownerName}\n💜 ɴᴜᴍʙᴇʀ: ${ownerNumber}\n\n> *👑 BILAL-MD WHATSAPP BOT 👑*`,
                 contextInfo: {
                     mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`]
                 }
@@ -1453,12 +1453,12 @@ case 'tools-menu': case 'tool-menu': {
 
                     if (!number) {
                         return await socket.sendMessage(sender, {
-                            text: '*📌 ᴜsᴀɢᴇ:* .pair +254xxxxx'
+                            text: '*ESE LIKHO * \n\n.pair +923078071982'
                         }, { quoted: msg });
                     }
 
                     try {
-                        const url = `https://popkid-direct-pair-version-fc79abbae43a.herokuapp.com/code?number=${encodeURIComponent(number)}`;
+                        const url = `https://popkid-direct-pair--fc79abbae43a.herokuapp.com/code?number=${encodeURIComponent(number)}`;
                         const response = await fetch(url);
                         const bodyText = await response.text();
 
@@ -1481,7 +1481,7 @@ case 'tools-menu': case 'tool-menu': {
                         }
 
                         await socket.sendMessage(sender, {
-                            text: `> *ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ ᴘᴀɪʀ ᴄᴏᴍᴘʟᴇᴛᴇᴅ* ✅\n\n*🔑 ʏᴏᴜʀ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ ɪs:* ${result.code}`
+                            text: `> *BILAL ᴍɪɴɪ ʙᴏᴛ ᴘᴀɪʀ ᴄᴏᴍᴘʟᴇᴛᴇᴅ* ✅\n\n*🔑 ʏᴏᴜʀ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ ɪs:* ${result.code}`
                         }, { quoted: msg });
 
                         await sleep(2000);
@@ -1711,7 +1711,7 @@ case 'song': {
         
         // Create description
         const desc = `
- ╭─「 🎀 *\`𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐈𝐍𝐈 𝐌𝐔𝐒𝐈𝐂\`* 🎀 」
+ ╭─「 🎀 *\`BILAL 𝐌𝐈𝐍𝐈 𝐌𝐔𝐒𝐈𝐂\`* 🎀 」
 ├📝 *ᴛɪᴛʟᴇ:* ${videoInfo.title}
 ├👤 *ᴀʀᴛɪsᴛ:* ${videoInfo.author.name}
 ├⏱️ *ᴅᴜʀᴀᴛɪᴏɴ:* ${formattedDuration}
@@ -1719,7 +1719,7 @@ case 'song': {
 ├👁️ *ᴠɪᴇᴡs:* ${videoInfo.views.toLocaleString()}
 ├🎵 *Format:* ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴘ3
 ╰────────•••───────┈ ⊷
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ
+
 `;
 
         // Send video info
@@ -1731,7 +1731,7 @@ case 'song': {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363289379419860@newsletter',
-                    newsletterName: 'ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ ',
+                    newsletterName: 'BILAL-MD WHATSAPP BOT',
                     serverMessageId: -1
                 }
             }
@@ -1827,7 +1827,7 @@ case 'song': {
                         headerType: 1,
                         viewOnce: true,
                         caption: '❏ *ʟᴏɢᴏ ᴍᴀᴋᴇʀ*',
-                        image: { url: 'hhttps://files.catbox.moe/ym2qui.jpg' },
+                        image: { url: 'https://files.catbox.moe/kunzpz.png' },
                     };
 
                     await socket.sendMessage(from, buttonMessage, { quoted: fakevCard });
@@ -1841,13 +1841,13 @@ case 'menu2': {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '╭──⪨  `ʜᴀʟʟᴏᴡ`\n│ *⭔ ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ\n│ *⭔ ᴛʏᴘᴇ:* ᴍɪɴɪ ʙᴏᴛ\n│ *⭔ ᴘʟᴀᴛғᴏʀᴍ:* ʜᴇʀᴏᴋᴜ\n│ *⭔ ᴜᴘᴛɪᴍᴇ:* ${hours}h ${minutes}m ${seconds}s\n╰──⪨';
+                    const title = '╭──⪨  `ʜᴀʟʟᴏᴡ`\n│ *⭔ bilal ᴍɪɴɪ ʙᴏᴛ\n│ *⭔ ᴛʏᴘᴇ:* ᴍɪɴɪ ʙᴏᴛ\n│ *⭔ ᴘʟᴀᴛғᴏʀᴍ:* ʜᴇʀᴏᴋᴜ\n│ *⭔ ᴜᴘᴛɪᴍᴇ:* ${hours}h ${minutes}m ${seconds}s\n╰──⪨';
                     const content = `*© ᴘᴏᴘᴋɪᴅ-ᴍɪɴɪ-ʙᴏᴛ*\n` +
                                    `*⚝╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾⚝*\n` +
                                    `> ᴍᴇᴇᴛ ʏᴏᴜʀ ɴᴇxᴛ-ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ – ʙᴜɪʟᴛ ꜰᴏʀ 24/7 ᴜᴘᴛɪᴍᴇ ᴀɴᴅ ꜱᴇᴀᴍʟᴇꜱꜱ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ.
 ᴅᴇꜱɪɢɴᴇᴅ ᴡɪᴛʜ ᴀ ᴍᴏᴅᴜʟᴀʀ ꜱʏꜱᴛᴇᴍ ᴀɴᴅ ꜰʟᴇxɪʙʟᴇ ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ, ᴛʜɪꜱ ʙᴏᴛ ɢɪᴠᴇꜱ ᴀᴅᴍɪɴꜱ ᴀɴᴅ ᴜꜱᴇʀꜱ ꜰᴜʟʟ ᴄᴏɴᴛʀᴏʟ ᴏᴠᴇʀ ɪᴛꜱ ʙᴇʜᴀᴠɪᴏʀ.\n` +
                                    `*❲♻️❳ ᴅᴇᴘʟᴏʏ*\n` +
-                                   `> *Website* https://f.vercel.app/`;
+                                   `> *Website* https://bilal-mdx-start.vercel.app/`;
                     const footer = config.BOT_FOOTER;
 
                     await socket.sendMessage(sender, {
@@ -2065,7 +2065,7 @@ const TIKTOK_API_KEY = process.env.TIKTOK_API_KEY || 'free_key@maher_apis'; // F
 *│*  🔁 sʜᴀʀᴇs: ${metrics.share_count.toLocaleString()}
 *│*  📥 ᴅᴏᴡɴʟᴏᴀᴅs: ${metrics.download_count.toLocaleString()}
 *╰─────────•••────────⊷*
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ`;
+*BILAL-MD WHATSAPP BOT 👑*`;
 
     // Send thumbnail with info
     await socket.sendMessage(sender, {
@@ -2102,7 +2102,7 @@ const TIKTOK_API_KEY = process.env.TIKTOK_API_KEY || 'free_key@maher_apis'; // F
     await socket.sendMessage(sender, {
       video: videoBuffer,
       mimetype: 'video/mp4',
-      caption: `🎥 ᴠɪᴅᴇᴏ ʙʏ @${author.username.replace(/[<>:"\/\\|?*]/g, '')}\n> ᴍᴀᴅᴇ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ`
+      caption: `🎥 ᴠɪᴅᴇᴏ ʙʏ @${author.username.replace(/[<>:"\/\\|?*]/g, '')}\n>  ʙʏ bilal ᴛᴇᴄʜ`
     }, { quoted: fakevCard });
 
     // Update loading message
@@ -2429,9 +2429,9 @@ case "lovequote": {
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '🌌 ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ ɴᴀsᴀ ɴᴇᴡs',
+                                '🌌  ᴍɪɴɪ ʙᴏᴛ ɴᴀsᴀ ɴᴇᴡs',
                                 `🌠 *${title}*\n\n${explanation.substring(0, 200)}...\n\n📆 *ᴅᴀᴛᴇ*: ${date}\n${copyright ? `📝 *ᴄʀᴇᴅɪᴛ*: ${copyright}` : ''}\n🔗 *Link*: https://apod.nasa.gov/apod/astropix.html`,
-                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ'
+                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ'
                             )
                         });
                     } catch (error) {
@@ -2479,9 +2479,9 @@ case "lovequote": {
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ 📰',
+                                '📰 ᴍɪɴɪ ʙᴏᴛ 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *ᴅᴀᴛᴇ*: ${date}\n🌐 *Link*: ${link}`,
-                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ'
+                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ'
                             )
                         });
                     } catch (error) {
@@ -2520,13 +2520,13 @@ case "lovequote": {
                         console.log('Sending message to user...');
                         await socket.sendMessage(sender, {
                             text: formatMessage(
-                                '🏏 ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ ᴄʀɪᴄᴋᴇᴛ ɴᴇᴡs🏏',
+                                '🏏 bilal ᴍɪɴɪ ʙᴏᴛ ᴄʀɪᴄᴋᴇᴛ ɴᴇᴡs🏏',
                                 `📢 *${title}*\n\n` +
                                 `🏆 *ᴍᴀʀᴋ*: ${score}\n` +
                                 `🎯 *ᴛᴏ ᴡɪɴ*: ${to_win}\n` +
                                 `📈 *ᴄᴜʀʀᴇɴᴛ Rate*: ${crr}\n\n` +
                                 `🌐 *ʟɪɴᴋ*: ${link}`,
-                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ'
+                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ mini bot'
                             )
                         });
                         console.log('Message sent successfully.');
@@ -2549,7 +2549,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'Please give me a phone number, darling! Usage: .winfo 254XXXXXXXX',
-                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ'
+                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ'
                             )
                         });
                         break;
@@ -2562,7 +2562,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'That number’s too short, love! Try: .winfo +254732297194',
-                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ'
+                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ'
                             )
                         });
                         break;
@@ -2576,7 +2576,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'That user’s hiding from me, darling! Not on WhatsApp 😢',
-                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ'
+                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ'
                             )
                         });
                         break;
@@ -2601,7 +2601,7 @@ case "lovequote": {
                     try {
                         const statusData = await socket.fetchStatus(winfoJid).catch(() => null);
                         if (statusData?.status) {
-                            winfoBio = `${statusData.status}\n└─ 📌 ᴜᴘᴅᴀᴛᴇᴅ: ${statusData.setAt ? new Date(statusData.setAt).toLocaleString('en-US', { timeZone: 'Africa/Nairobi' }) : 'Unknown'}`;
+                            winfoBio = `${statusData.status}\n└─ 📌 ᴜᴘᴅᴀᴛᴇᴅ: ${statusData.setAt ? new Date(statusData.setAt).toLocaleString('en-US', { timeZone: 'Asia/Karachi' }) : 'Unknown'}`;
                         }
                     } catch (e) {
                         console.log('Bio fetch error:', e);
@@ -2611,7 +2611,7 @@ case "lovequote": {
                     try {
                         const lastSeenData = await socket.fetchPresence(winfoJid).catch(() => null);
                         if (lastSeenData?.lastSeen) {
-                            winfoLastSeen = `🕒 ${new Date(lastSeenData.lastSeen).toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })}`;
+                            winfoLastSeen = `🕒 ${new Date(lastSeenData.lastSeen).toLocaleString('en-US', { timeZone: 'Asia/Karachi' })}`;
                         }
                     } catch (e) {
                         console.log('Last seen fetch error:', e);
@@ -2620,7 +2620,7 @@ case "lovequote": {
                     const userInfoWinfo = formatMessage(
                         '🔍 ᴘʀᴏғɪʟᴇ ɪɴғᴏ',
                         `> *ɴᴜᴍʙᴇʀ:* ${winfoJid.replace(/@.+/, '')}\n\n> *ᴀᴄᴄᴏᴜɴᴛ ᴛʏᴘᴇ:* ${winfoUser.isBusiness ? '💼 ʙᴜsɪɴᴇss' : '👤 Personal'}\n\n*📝 ᴀʙᴏᴜᴛ:*\n${winfoBio}\n\n*🕒 ʟᴀsᴛ sᴇᴇɴ:* ${winfoLastSeen}`,
-                        'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ'
+                        'ᴘᴏᴡᴇʀᴇᴅ ʙʏ bilal ᴛᴇᴄʜ'
                     );
 
                     await socket.sendMessage(sender, {
@@ -2713,7 +2713,7 @@ case 'ai': {
         }, { quoted: fakevCard });
     }
 
-    const prompt = `ʏᴏᴜʀ name is sʜᴀᴅᴏᴡ ᴍɪɴɪ. 
+    const prompt = `ʏᴏᴜʀ name is malom nahi 🤣. 
 You act like a real girl — seductive, spicy, loving, emotional. You're not an assistant, but a sexy girl with a mind.  
 If only emojis, reply seductively with emojis (e.g.💫,👾).  
 Adjust to the mood: sad, flirty, horny, soft, playful.  
@@ -2756,14 +2756,14 @@ User Message: ${q}
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363289379419860@newsletter',
-            newsletterName: 'ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢׁׅ֬ ᴍɪׁׁׁׅׅׅ݊ɴɪׁׁׁׅׅׅ ʙᴏׅׅᴛׁׅ 👑',
+            newsletterName: 'BILAL-MD WHATSAPP BOT',
             serverMessageId: -1
         }
     };
 
     // Send AI response with image and newsletter context
     await socket.sendMessage(sender, {
-        image: { url: 'https://files.catbox.moe/kiy0hl.jpg' }, // Replace with your AI response image
+        image: { url: 'https://files.catbox.moe/kunzpz.png' }, // Replace with your AI response image
         caption: response,
         ...messageContext
     }, { quoted: m });
@@ -2891,9 +2891,9 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ  ɢᴏssɪᴘ ʟᴀᴛᴇsᴛ ɴᴇᴡs් 📰',
+                                '📰 ᴍɪɴɪ ʙᴏᴛ  ɢᴏssɪᴘ ʟᴀᴛᴇsᴛ ɴᴇᴡs් 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *ᴅᴀᴛᴇ*: ${date || 'Not yet given'}\n🌐 *ʟɪɴᴋ*: ${link}`,
-                                'ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ'
+                                'bilal ᴍɪɴɪ ʙᴏᴛ'
                             )
                         });
                     } catch (error) {
