@@ -2822,7 +2822,7 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
 
                     if (!prompt) {
                         return await socket.sendMessage(sender, {
-                            text: '🎨 *Give me a spicy prompt to create your AI image, darling 😘*'
+                            text: '🎨 *Give me a spicy prompt to create your AI image, Pakistani Flag*'
                         });
                     }
 
@@ -2844,7 +2844,7 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
 
                         await socket.sendMessage(sender, {
                             image: imageBuffer,
-                            caption: `🧠 *ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ ʙᴏᴛ ᴀɪ ɪᴍᴀɢᴇ*\n\n📌 ᴘʀᴏᴍᴘᴛ: ${prompt}`
+                            caption: `🧠 * ᴍɪɴɪ ʙᴏᴛ ᴀɪ ɪᴍᴀɢᴇ*\n\n📌 ᴘʀᴏᴍᴘᴛ: ${prompt}`
                         }, { quoted: fakevCard });
                     } catch (err) {
                         console.error('AI Image Error:', err);
@@ -2964,7 +2964,7 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
                     }
                     if (args.length === 0 && !msg.quoted) {
                         await socket.sendMessage(sender, {
-                            text: `📌 *ᴜsᴀɢᴇ:* ${config.PREFIX}ᴋɪᴄᴋ +254xxxxx ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ${config.PREFIX}ᴋɪᴄᴋ`
+                            text: `📌 *ᴜsᴀɢᴇ:* ${config.PREFIX}ᴋɪᴄᴋ +92xxx ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ${config.PREFIX}ᴋɪᴄᴋ`
                         }, { quoted: fakevCard });
                         break;
                     }
@@ -3272,7 +3272,7 @@ case 'cleargroup': {
 
         // Préparer le texte principal
         let message = args.join(' ') || '📢 *ᴀᴛᴛᴇɴᴛɪᴏɴ ᴇᴠᴇʀʏᴏɴᴇ!*';
-        let teks = `╭「 *👥 ᴛᴀɢɢᴀʟʟ ɢᴄ* 」\n│• ᴍᴇssᴀɢᴇ: ${message}\n│• ʙᴏᴛ ɴᴀᴍᴇ: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪ\n│• ᴅᴇᴠ: ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\n`;
+        let teks = `╭「 *👥 ᴛᴀɢɢᴀʟʟ ɢᴄ* 」\n│• ᴍᴇssᴀɢᴇ: ${message}\n│• ʙᴏᴛ ɴᴀᴍᴇ: bilal ᴍɪɴɪ\n│• ᴅᴇᴠ: ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ\n`;
 
         // Ajouter chaque mention @username
         for (let mem of participants) {
